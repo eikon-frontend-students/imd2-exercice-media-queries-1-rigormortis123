@@ -4,8 +4,41 @@
   padding: 0;
 }
 
+/* FONTZ */
+
+h2,
+h3 {
+  font-family: "hammersmith one";
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+p {
+  font-family: "inter";
+  font-size: 14px;
+}
+
+.download-content.mobile {
+  margin: 5px 0px;
+}
+
+.download-content.desktop {
+  visibility: hidden;
+}
+
+/* TRUCS */
+
 body {
   padding: 20px;
+  text-align: center;
 }
 
 a {
@@ -15,4 +48,55 @@ a {
 img,
 video {
   display: block;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.description-title {
+  margin: 20px 0px;
+}
+
+/* QUERIES */
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+  .logos {
+    justify-content: space-between;
+    margin: 50px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .description-content,
+  .description-title {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .description-content {
+    font-size: 20px;
+  }
+
+  .logos {
+    height: 100px;
+    justify-content: start;
+  }
+
+  .download-content.mobile {
+    visibility: hidden;
+  }
+
+  .download-content.desktop {
+    visibility: visible;
+  }
 }
