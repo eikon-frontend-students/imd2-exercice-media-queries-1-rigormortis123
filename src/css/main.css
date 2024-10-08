@@ -31,6 +31,7 @@ p {
 }
 
 .download-content.desktop {
+  height: 0px;
   visibility: hidden;
 }
 
@@ -93,10 +94,13 @@ video {
   }
 
   .download-content.mobile {
+    height: 0px;
+    margin: 0px;
     visibility: hidden;
   }
 
   .download-content.desktop {
+    height: auto;
     visibility: visible;
   }
 }
