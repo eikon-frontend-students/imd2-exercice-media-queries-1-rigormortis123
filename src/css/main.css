@@ -31,8 +31,7 @@ p {
 }
 
 .download-content.desktop {
-  height: 0px;
-  visibility: hidden;
+  display: none;
 }
 
 /* TRUCS */
@@ -94,13 +93,10 @@ video {
   }
 
   .download-content.mobile {
-    height: 0px;
-    margin: 0px;
-    visibility: hidden;
+    display: none;
   }
 
   .download-content.desktop {
-    height: auto;
-    visibility: visible;
+    display: contents;
   }
 }
